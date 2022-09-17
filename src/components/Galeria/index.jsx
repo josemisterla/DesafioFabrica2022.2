@@ -37,7 +37,11 @@ function Galeria() {
       <p className="habitat">Habitate: {galeria?.habitat??""}</p>
       <p className="diet">Dieta: {galeria?.diet??""}</p>
       <p className="geo_range">Localização: {galeria?.geo_range??""} </p>
-      <img src={galeria?.link ?? "alo"} alt="" />
+      <img src={galeria?.link ?? ""} alt="" />
+
+      <button type="button" className="btn" onClick={getGaleria}>
+        Pegar animal
+      </button>
     </div>
   );
 };
