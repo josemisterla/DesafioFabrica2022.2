@@ -28,6 +28,7 @@ const AnimalRandom = () => {
       <h1>Animal Random </h1>
       <p className="Animal">{animal?.nome ?? "Fact Animal"}</p>
       <img src={animal?.link ?? "alo"} alt="" />
+      
       <button type="button" className="btn" onClick={getAnimal}>
         ´Pegar animal
       </button>
