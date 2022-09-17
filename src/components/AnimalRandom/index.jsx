@@ -20,17 +20,26 @@ const AnimalRandom = () => {
     setAnimal({
       nome: data.name,
       link: data.image_link
+      : data.latin_name 
+      habitat: date.habitat 
+      diet: date.diet
+      location: date.geo_range 
+
     });
   };
 
   return (
     <div className="container">
       <h1>Animal Random </h1>
-      <p className="Animal">{animal?.nome ?? "Fact Animal"}</p>
+      <p className="Animal">{animal?.nome ?? "Benune"}</p>
+      <p className="latin">{animal?.latin_name??"Abigobivel "}</p>
+      <p className="habitat">{animal?.habitat??"Na Tua Casa"}</p>
+      <p className="diet">{animal?.diet??"Bosta"}</p>
+      <p className="geo_range">{animal?.geo_range??"Casa do Bill"} </p>
       <img src={animal?.link ?? "alo"} alt="" />
       
       <button type="button" className="btn" onClick={getAnimal}>
-        ´Pegar animal
+        Pegar animal
       </button>
     </div>
   );

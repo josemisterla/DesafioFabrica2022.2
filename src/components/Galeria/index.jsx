@@ -23,9 +23,6 @@ function Galeria() {
     <div className="container">
       <h1>Almanaqui</h1>
       <p className="galeria">{galeria}</p>
-      <button type="button" className="btn" onClick={getGaleria}>
-         Galeria
-      </button>
     </div>
   );
 }
