@@ -4,8 +4,8 @@ import './style.css'
 const AnimalRandom = () => {
   const [animal, setAnimal] = useState(null);
 
-  // useEffect(() => {
-  //   getAnimal();
+  //  useEffect(() => {
+  //    getAnimal();
   // }, []);
 
   const getAnimal = async () => {
@@ -32,11 +32,11 @@ const AnimalRandom = () => {
   return (
     <div className="container">
       <h1>Animal Random </h1>
-      <p className="Animal">{animal?.nome ?? "Benune"}</p>
-      <p className="latin">{animal?.latin_name??"Abigobivel "}</p>
-      <p className="habitat">{animal?.habitat??"Na Tua Casa"}</p>
-      <p className="diet">{animal?.diet??"Bosta"}</p>
-      <p className="geo_range">{animal?.geo_range??"Casa do Bill"} </p>
+      <p className="Animal">Nome: {animal?.nome ?? ""}</p>
+      <p className="latin">Nome Latin: {animal?.latin_name??" "}</p>
+      <p className="habitat">Habitate: {animal?.habitat??""}</p>
+      <p className="diet">Dieta: {animal?.diet??""}</p>
+      <p className="geo_range">Localização: {animal?.geo_range??""} </p>
       <img src={animal?.link ?? "alo"} alt="" />
       
       <button type="button" className="btn" onClick={getAnimal}>
