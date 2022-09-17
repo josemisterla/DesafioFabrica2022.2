@@ -1,12 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import './style.css'
 
 const AnimalRandom = () => {
   const [animal, setAnimal] = useState(null);
-
-  //  useEffect(() => {
-  //    getAnimal();
-  // }, []);
 
   const getAnimal = async () => {
     const response = await fetch("https://zoo-animal-api.herokuapp.com/animals/rand", {
@@ -37,7 +33,7 @@ const AnimalRandom = () => {
       <p className="habitat">Habitate: {animal?.habitat??""}</p>
       <p className="diet">Dieta: {animal?.diet??""}</p>
       <p className="geo_range">Localização: {animal?.geo_range??""} </p>
-      <img src={animal?.link ?? "alo"} alt="" />
+      <img src={animal?.link ?? ""} alt="" />
       
       <button type="button" className="btn" onClick={getAnimal}>
         Pegar animal
