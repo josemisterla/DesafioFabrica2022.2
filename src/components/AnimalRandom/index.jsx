@@ -19,11 +19,12 @@ const AnimalRandom = () => {
     
     setAnimal({
       nome: data.name,
-      link: data.image_link
-      : data.latin_name 
-      habitat: date.habitat 
-      diet: date.diet
-      location: date.geo_range 
+      link: data.image_link,
+      latin: data.latin_name,
+      habitat: data.habitat, 
+      diet: data.diet,
+      geo_range: data.geo_range 
+ 
 
     });
   };

@@ -5,7 +5,7 @@ const homepage = () => {
     <main>
       <Home />
     </main>
-  );
+  )
 };
 
 export default homepage;

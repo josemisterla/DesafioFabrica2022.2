@@ -2,7 +2,7 @@ import './style.css'
 
 function Home (){
     return <div>
-        ola mundo
+        obaoba
     </div>
 }
 
