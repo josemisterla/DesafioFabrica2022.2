@@ -2,7 +2,7 @@ import './style.css'
 
 function Home (){
     return <div>
-        obaoba
+        Bem vindo a Bica
     </div>
 }
 

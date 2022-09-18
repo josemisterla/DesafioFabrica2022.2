@@ -36,7 +36,7 @@ const AnimalRandom = () => {
       <img src={animal?.link ?? ""} alt="" />
       
       <button type="button" className="btn" onClick={getAnimal}>
-        Pegar animal
+        Animal
       </button>
     </div>
   );
